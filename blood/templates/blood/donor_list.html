@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% for donor in object_list %}
+        <p> 
+            {{ donor.first_name }} {{ donor.last_name }} - {{ donor.pk }}
+        </p>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>{{ object.first_name }} {{ object.last_name }} </h2>
+
+<h3>{{ object.pk }} </h3>
+
+<a href="{% url 'donor_edit' object.pk %}">Edit</a>
+|
+<a href="{% url 'donor_delete' object.pk %}">Delete</a>
+
+{% endblock %}
